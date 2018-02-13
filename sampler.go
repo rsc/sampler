@@ -34,6 +34,15 @@ func Hello(prefs ...language.Tag) string {
 	return hello.find(prefs)
 }
 
+// Glass returns a localized silly phrase.
+// If no prefs are given, Glass uses DefaultUserPrefs.
+func Glass(prefs ...language.Tag) string {
+	if len(prefs) == 0 {
+		prefs = DefaultUserPrefs()
+	}
+	return glass.find(prefs)
+}
+
 // A text is a localized text.
 type text struct {
 	byTag   map[string]string
