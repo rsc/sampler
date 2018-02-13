@@ -20,7 +20,7 @@ var helloTests = []struct {
 	},
 	{
 		[]language.Tag{language.Make("fr"), language.Make("en-US")},
-		"Bonjour la monde.",
+		"Bonjour le monde.",
 	},
 }
 
