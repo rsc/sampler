@@ -34,6 +34,10 @@ func Hello(prefs ...language.Tag) string {
 	return hello.find(prefs)
 }
 
+func Glass() string {
+	return "I can eat glass and it doesn't hurt me."
+}
+
 // A text is a localized text.
 type text struct {
 	byTag   map[string]string
